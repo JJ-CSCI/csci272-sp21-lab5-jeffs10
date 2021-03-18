@@ -14,16 +14,8 @@ public:
   Real operator + (double v)
 }
 {
-  return Real(re+v);
+  return;
 };
-class Complex: public Real 
-{
-  private:
-  double  im;
-  Public:
-  Complex(double r, double i): Real (r), im(i)
-}
-
   double GetImaginary() const
 {
   return im;
@@ -34,6 +26,14 @@ class Surreal: public Complex
   double sur;
   public:
   Surreal(double a, double b, double c);
+}
+
+class Complex: public Real 
+{
+  private:
+  double  im;
+  Public:
+  Complex(double r, double i): Real (r), im(i)
 }
 
 
