@@ -24,6 +24,7 @@ class Surreal: public Complex
 {
   private:
   double sur;
+  
   public:
   Surreal(double a, double b, double c);
 }
@@ -32,7 +33,8 @@ class Complex: public Real
 {
   private:
   double  im;
-  Public:
+
+  public:
   Complex(double r, double i): Real (r), im(i)
 }
 
